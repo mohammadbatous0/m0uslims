@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Description and Keywords (start) -->
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <meta content='أوقات الصلاة حسب مدينتك بدقة كاملة ومتناهية' name='description'/>
+    </b:if>
+    <meta content='أوقات الصلاة,أوقات,مسلمون' name='keywords'/>
+    <!-- Description and Keywords (end) -->
+   <!-- Social Media meta tag need customer customization -->
+    <meta content='101629945938501' property='fb:app_id'/>
+    <meta name="theme-color" content="#0c6d7e">
+    <link rel="stylesheet" href="../css-app/all.css">
+    <!--font-fetch-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&family=Changa:wght@500&family=Noto+Kufi+Arabic&family=Readex+Pro:wght@600&family=Red+Hat+Mono:ital,wght@1,300&family=Tajawal&display=swap" rel="stylesheet">
+    <title>أوقات الصلاة</title>
+    <style>
+        .countinear
+        {
+            width: 100%;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .countinear .sallat-content-group
+        {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: inherit;
+
+        }
+        .countinear .sallat-content-group .sallat-card 
+        {
+            min-width: 120px;
+            width: 17rem;
+            padding: 10px;
+            border: 2px solid var(--color-main);
+            background-color: var(--color-white);
+            text-align: center;
+            margin: 10px;
+
+        }
+        .countinear .sallat-content-group .sallat-card .time-sallat 
+        {
+            background-color: var(--color-main);
+            color: var(--color-white);
+            padding: 5px;
+        }
+        .countinear .sallat-content-group .sallat-card .content-card
+        {
+            font-weight: bold;
+            font-size: 25px;
+            animation: blub 0.9s ease-in-out infinite;
+        }
+        @keyframes blub{
+            50%{
+                opacity: 0.5;
+            }
+            100%
+            {
+                opacity: 1;
+            }
+        }
+        .countinear .sallat-content-group .sallat-card .footer-count-time
+        {
+            background-color: var(--color-secandry);
+            padding: 5px;
+            border-radius: 5px;
+            color: var(--color-white);
+        }
+
+
+
+        @media (max-width:450px)
+        {
+            .countinear
+            {
+                margin-top: 95px !important;
+            }
+            .about-azan .about_azan_info
+            {
+                width: 270px;
+                margin: auto;
+                border-radius: 15px;
+            }
+            .about-azan .about_azan_info .cards-info
+            {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        
+        /* card -info*/
+    .about-azan
+    {
+        margin-top: 30px;
+    }
+    .about-azan .about_azan_info
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--color-main);
+        color: var(--color-white);
+    }
+    .about-azan .about_azan_info .cards-info
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: center;
+        padding:10px;
+        margin: 5px 20px; 
+    }
+    .time-add
+    {
+        font-weight: bold ;
+    }
+    </style>
+    </head>
+    <body>
+        <nav>
+            <input  type="checkbox" name="" id="nav-toggle">
+            <div class="logo">
+               <img src="../image/logo-header.png" alt="">
+           </div>
+           <ul class="links">
+            <li class="active-nav"><a  href="../index.html">الصفحة الرئيسية</a></li>
+            <li><a href="hadith.html">أحاديث نبوية</a></li>
+            <li><a href="quran.html">القرآن الكريم</a></li>
+            <li><a href="tfser.html">تفسير القرآن الكريم</a></li>
+            <li><a href="section-azkar.html">أذكار</a></li>
+            <li><a href="section-duaa.html">أدعية</a></li>
+             <!-- new link
+                 <li><a href=""></a></li>
+               -->
+        </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>   
+    <div class="empty"></div>
+        <div class="countinear">
+            
+            
+            <div class="sallat-content-group"> 
+
+            
+                <div class="sallat-card">
+                    <div class="time-sallat">
+                        صلاة الفجر
+                    </div>
+                    <div class="content-card">
+                    </div>
+                    <div class="footer-count-time">
+                    </div>
+
+                </div>
+                <div class="sallat-card">
+                    <div class="time-sallat">
+                        صلاة الظهر
+                    </div>
+                    <div class="content-card">
+                    </div>
+                    <div class="footer-count-time">
+                    </div>
+
+                </div>
+                <div class="sallat-card">
+                    <div class="time-sallat">
+                        صلاة العصر
+                    </div>
+                    <div class="content-card">
+                    </div>
+                    <div class="footer-count-time">
+                    </div>
+
+                </div>
+                <div class="sallat-card">
+                    <div class="time-sallat">
+                        صلاة المغرب
+                    </div>
+                    <div class="content-card">
+                    </div>
+                    <div class="footer-count-time">
+                    </div>
+
+                </div>
+                <div class="sallat-card">
+                    <div class="time-sallat">
+                        صلاة العشاء
+                    </div>
+                  
+                        <div class="content-card">
+                    </div>
+                    <div class="footer-count-time">
+                    </div>
+
+                </div>
+            
+           
+            </div>
+            <div class="about-azan">
+                <div class="about_azan_info">
+                    <div class="cards-info">
+                        <div class="icon-info">
+                            &nbsp;
+                            <i class="fa-solid fa-earth-americas"></i>
+                      
+                        </div>
+                        <div class="text-info">
+                             :  الدولة 
+                        </div>
+                        <div class="result-info">
+سوريا
+                        </div>
+                    </div>
+                    <div class="cards-info">
+                <div class="icon-info">
+                    &nbsp;
+                    <i class="fa-solid fa-city"></i>
+
+                        </div>
+                        <div class="text-info">
+                            : المدينة 
+                        </div>
+                        <div class="result-info">
+                            إدلب
+                        </div>
+                    </div>
+                    <div class="cards-info">
+                        <div class="icon-info">
+                            &nbsp;
+                            <i class="fa-solid fa-sun"></i>
+
+                        </div>
+                        <div class="text-info">
+                            : وقت الشروق  
+                        </div>
+                        <div class="result-info time-add">
+                        </div>
+                    </div>
+                    <div class="cards-info">
+                        <div class="icon-info">
+                            &nbsp;
+                            <i class="fa-solid fa-cloud-sun"></i>
+
+                        </div>
+                        <div class="text-info">
+                            :   وقت الغروب  
+                        </div>
+                        <div class="result-info time-add">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>           
+
+
+         <footer>
+            <div class="footer-content">
+                <div class="countinear-plus">
+                    <a href="https://ia800105.us.archive.org/27/items/Quran-Kareem-Khawagah-The-Blue-Page-Quran/Quran-Kareem-Khawagah-The-Blue-Page-Quran.pdf">تحميل القرآن الكريم</a>
+                    <a href="tfser.html">تفسير القرآن الكريم</a>
+                    <a href="quran-audios.html"> القرآن الكريم بالصوت</a>
+                    <a href="quran-image.html">تحميل تطبيق مسلمون</a>
+                </div>
+                <div class="footer-icon-socail-media">
+                    <a href="https://www.facebook.com/m0uslims"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://t.me/m0uslims"> <i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://m.me/m0uslims"> <i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href="https://t.me/m0uslims"><i class="fa-brands fa-slack"></i></a>
+                    </div>
+                <div class="copyrigth-box">
+            مسلمون 2022
+                </div>
+            </div>
+                </footer>
+                <div class="page-loading">
+                    <div class="content">
+                        <div class="img-content">
+                            <img width="150px" src="../image/loading.gif" alt="">
+                        </div>
+                        <div class="bottom-image">
+                        <div class="title-content">
+                            جاري تحميل الصفحة
+                        </div>
+                        <div class="text-content text-center">
+                            
+                        </div>
+                    </div>
+                    </div>
+                </div>
+               <script src="../js-app/app.js"></script>
+
+            <script src="https://kit.fontawesome.com/64e995aa72.js" crossorigin="anonymous"></script>
+            <script>
+                let date = new Date();
+                /*
+                let num2 = '17:48';
+                let num_main = "24";
+                let hour = num2.slice(0,2);
+                let minute = num2.slice(3,5);
+                */
+                function convertto_time(time){
+                    if(time == 13)
+                    {
+                        return 1 ;
+                    }
+                    else if(time == 14)
+                    {
+                        return 2;
+                    }
+                    else if(time == 15)
+                    {
+                        return 3 ;
+                    }
+                    else if(time == 16)
+                    {
+                        return 4;
+                    }
+                    else  if(time == 17)
+                    {
+                        return 5 ;
+                    }
+                    else if(time == 18)
+                    {
+                        return 6;
+                    }
+                    else if(time == 19)
+                    {
+                        return 7 ;
+                    }
+                    else if(time == 20)
+                    {
+                        return 8;
+                    }
+                    else if(time == 21)
+                    {
+                        return 9 ;
+                    }
+                    else if(time == 22)
+                    {
+                        return 10;
+                    }  else if(time == 23)
+                    {
+                        return 11 ;
+                    }
+                    else if(time == 24)
+                    {
+                        return 12;
+                    }
+                    else 
+                    {
+                        return time;
+                    }
+                }
+                function merge(hour,minute,second)
+                {
+                    return `${hour}:${minute}:${second}`;
+                }
+                function mergetime(hour,minute)
+                {
+                    return `${hour}:${minute}`;
+                }
+                function get_time_salwat(){
+                   fetch(`http://api.aladhan.com/v1/timingsByCity?city=idlib&country=syria%20Arab%20Emirates&method=8`).then(response => response.json()).then(data => {
+                    let time_azan = document.querySelectorAll('.content-card')
+                    , time_adding = document.querySelectorAll('.time-add');
+                    ;
+                    let fajr = data.data.timings.Fajr;
+                    let hour_fajr = fajr.slice(0,2)
+                    , minute_fajr = fajr.slice(3,5)
+                    , second = 00;
+                    let hour_main_fajr = convertto_time(hour_fajr);
+                    let time_fajr = merge(hour_main_fajr,minute_fajr,second);
+//duher 
+                    let Dhuhr = data.data.timings.Dhuhr;
+                    let hour_Dhuhrr = Dhuhr.slice(0,2)
+                    , minute_Dhuhr = Dhuhr.slice(3,5);
+                    let hour_main_Dhuhr = convertto_time(hour_Dhuhrr);
+                    let time_Dhuhr = merge(hour_main_Dhuhr,minute_Dhuhr,second);
+//asr
+                    let Asr = data.data.timings.Asr;
+                    let hour_Asr = Asr.slice(0,2)
+                    , minute_Asr = Asr.slice(3,5);
+                    let hour_main_Asr = convertto_time(hour_Asr);
+                    let time_Asr = merge(hour_main_Asr,minute_Asr,second);
+//moghreb
+                    let Maghrib = data.data.timings.Maghrib;
+                    let hour_Maghrib = Maghrib.slice(0,2)
+                    , minute_Maghrib = Maghrib.slice(3,5);
+                    let hour_main_Maghrib = convertto_time(hour_Maghrib);
+                    let time_Maghrib = merge(hour_main_Maghrib,minute_Maghrib,second);
+                    
+                  //isha
+                  let Isha = data.data.timings.Isha;
+                    let hour_Isha = Isha.slice(0,2)
+                    , minute_Isha = Isha.slice(3,5);
+                    let hour_main_Isha = convertto_time(hour_Isha);
+                    let time_Isha= merge(hour_main_Isha,minute_Isha,second)
+                    , down_time_conteinar = document.querySelectorAll('.footer-count-time');
+                  //timer
+                timer_countdate(down_time_conteinar,hour_main_fajr,minute_fajr,0);
+                timer_countdate(down_time_conteinar,hour_main_Dhuhr,minute_Dhuhr,1);
+                timer_countdate(down_time_conteinar,hour_main_Asr,minute_Asr,2);
+                timer_countdate(down_time_conteinar,hour_main_Maghrib,minute_Maghrib,3);
+                timer_countdate(down_time_conteinar,hour_main_Isha,minute_Isha,4);
+
+     function timer_countdate(element_time,hour_end,minute_end,i)
+      {
+        let date = new Date()
+        , months = date.getMonth() + 1,
+        day =date.getDate();
+          //ideas and programming by mohammad m batous
+        const countdate = new Date(`${months} ${day} 2022 ${hour_end}:${minute_end}:00`).getTime();
+        const now = new Date().getTime();
+        const gap = countdate-now;
+        if(0>gap || now > countdate)
+        {
+                clearInterval(timer_countdate);
+                element_time[i].innerText=00+':'+00+":"+00;
+        }
+        else{
+                const second = 1000;
+                const minute = second*60;
+                const hour = minute*60;
+                const day = hour * 24;
+        //calcuate
+        const textday = Math.floor(gap/day);
+        const texthour = Math.floor((gap%day)/hour);
+        const textminute = Math.floor((gap%hour)/minute);
+        const textsecond = Math.floor((gap%minute)/second);
+    if(textday==0&&texthour==0&&textminute==0&&textsecond==0)
+{
+                clearInterval(timer_countdate)
+                element_time[i].innerText=00+':'+00+":"+00;
+
+}
+                element_time[i].innerText=texthour+":"+textminute+":"+textsecond;
+
+      }
+    }
+
+
+
+
+
+
+
+                  //end timer
+
+
+                    //console.log(fajr);
+                    time_azan[0].innerText = mergetime(hour_main_fajr,minute_fajr);
+                    time_azan[1].innerText = mergetime(hour_main_Dhuhr,minute_Dhuhr);
+                    time_azan[2].innerText = mergetime(hour_main_Asr,minute_Asr);
+                    time_azan[3].innerText = mergetime(hour_main_Maghrib,minute_Maghrib);
+                    time_azan[4].innerText = mergetime(hour_main_Isha,minute_Isha);
+                    time_adding[0].innerText = data.data.timings.Sunrise;
+                    time_adding[1].innerText = data.data.timings.Maghrib;
+
+                        //console.log(data.data.timings.Fajr)
+                    })
+                }
+                get_time_salwat();
+  
+  </script>
+            </body>
+            </html>

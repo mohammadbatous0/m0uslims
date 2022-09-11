@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Description and Keywords (start) -->
+      <b:if cond='data:blog.pageType == &quot;index&quot;'>
+        <meta content='مسلمون حول العالم' name='description'/>
+        </b:if>
+        <meta content='مسلمون , muslims , مسلم' name='keywords'/>
+        <!-- Description and Keywords (end) -->
+       <!-- Social Media meta tag need customer customization -->
+        <meta content='101629945938501' property='fb:app_id'/>
+        <meta name="theme-color" content="#0c6d7e">
+        <link rel="stylesheet" href="css-app/all.css">
+    <!--font-fetch-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&family=Changa:wght@500&family=Noto+Kufi+Arabic&family=Readex+Pro:wght@600&family=Red+Hat+Mono:ital,wght@1,300&family=Tajawal&display=swap" rel="stylesheet">
+    <title>مسلمون - muslims</title>
+    <style>
+   /* start */
+  
+   article
+   {
+    width: 100%;
+    height: 100%;
+   }
+   .parent-article
+   {
+    width: 100%;
+    height: 100%;
+    background-image: url("image/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+   }
+   .parent-article .card-content
+   {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .parent-article .card-content::after
+   {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109deg,var(--color-main),var(--color-secandry));
+    opacity: 0.3;
+   }
+   .title-content-article
+   {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--color-main);
+    color: var(--color-white);
+    padding: 5px 7px;
+    border-radius: 5px;
+   }
+  article  button
+   {
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+   }
+   .btn-explore
+   {
+    background-color: var(--color-secandry);
+    color: var(--color-white);
+   }
+   .btn-download
+   {
+    background-color: var(--color-main);
+   }
+   /* start main */
+   main
+   {
+    margin:15px 0px;
+    width: 100%;
+
+   }
+   main .card-group
+   {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+   main div.card 
+   {
+    width: 17rem;
+    min-width: 16rem;
+    background-color: var(--color-white);
+    border: 1.30px dashed var(--color-main);
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.4s all;
+   }
+   main div.card:hover
+   {
+    box-shadow:0 30px 50px rgba(0,0,0,.2);
+    position:relative;
+    transform:translateY(-6px);
+    background-color: rgba(248, 241, 241, 0.389)255, 255, 255;
+   }
+   main .card .row 
+   {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+   }
+  main .card .row .right-content
+  {
+    text-align: center;
+  }
+  main .card .row .right-content .rigth-text
+  {
+    font-weight: bold;
+    color: var(--color-main);
+  }
+  main .card .row .right-content .content-card
+  {
+    color: var(--color-secandry);
+  }
+@media (max-width:450px)
+{
+    main .card-group .card 
+    {
+        width: 80%;
+    }
+    section .card-section-group .about-muslims-text
+    {
+        width: 350px !important;
+    }
+    article.desktop
+    {
+        display: none;
+    }
+
+}
+
+ 
+aside .card-content-aside
+{
+    min-height: 100px;
+    padding: 15px;
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url('image/quran-background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+aside .card-content-aside::after
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109deg,var(--color-main),var(--color-secandry));
+    opacity: 0.3;
+}
+aside div.card-group
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+aside div.card-group .card-col
+{
+    display: flex;
+    width: 17rem;
+    margin: 15px 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+aside .card-group .card-col .fa-2x
+{
+    color: var(--color-secandry);
+}
+aside .card-group .card-col .content-aside-bottom
+{
+    font-size: 20px;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section
+{
+    margin: 25px 0px;
+}
+section .card-section-group
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+section .card-section-group .image-logo-right > img
+{
+    width: 350px;
+    margin-top: -85px;
+}
+section .card-section-group .about-muslims-text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-main);
+    font-weight: bold;
+    align-items: center;
+    border-radius: 20px;
+    width: 500px;
+    margin-top: -71px;
+}
+section .card-section-group .about-muslims-text .text-paragraph-about
+{
+text-align: center;
+}
+@media (min-width:900px)
+{
+    article.mobile 
+    {
+        display: none;
+    }
+}
+.desktop
+{
+    display: flex;
+    margin-top: 70px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.desktop .section-right img
+{
+width: 300px;
+}
+.desktop .section-left h3
+{
+    font-weight: bold;
+    font-size: 40px;
+}
+.desktop .section-left .button-inbox
+{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+.desktop .section-left .button-inbox > button 
+{
+    transition: 0.5s all;
+    cursor:  pointer;
+}
+.desktop .section-left .button-inbox  button:hover
+{
+     padding: 6px;
+}
+.desktop .section-left .button-inbox .explore-btn
+{
+    background-color: var(--color-main);
+    color: var(--color-white);
+}
+.desktop .section-left .button-inbox .download-btn{
+    background-color: var(--color-secandry);
+    color: #000;
+}
+.desktop a
+{
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: var(--color-main);
+    transform: translateX(-50%);
+    cursor: pointer;
+    animation: todo 0.5s ease-in-out infinite;
+}
+@keyframes todo 
+{
+    50%{
+        bottom: 25px;
+    }
+    90%
+    {
+        
+       bottom: 15px;
+    }
+}
+.explore
+{
+    background-color: transparent;
+    border: 2px solid var(--color-main);
+    border-radius: 0px;
+    color: var(--color-white);
+    cursor: pointer;
+    padding: 10px;
+}
+/* section new */
+    .ayha-today-box
+    {
+        margin-top: 15px;
+    }
+    .ayha-today-box .inbox-ayhaa
+    {
+        background-color: var(--color-main);
+        width: fit-content;
+        margin: auto;
+        margin-top: 15px !important;
+        padding: 5px;
+    }
+    .ayha-today-box .inbox-ayhaa textarea
+    {
+        width: 300px;
+        resize: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-main);
+        padding: 30px;
+        font-weight: bold;
+    }
+    .ayha-today-box .inbox-ayhaa .about-ayhaa
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ayha-today-box .inbox-ayhaa .about-ayhaa .info-ayhaa
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 15px;
+        width: 75%;
+    }
+    .ayha-today-box .inbox-ayhaa .about-ayhaa .new-ayha
+    {
+        width: 20%;
+        text-align: center;
+        padding: 5px;
+    }
+    .ayha-today-box .inbox-ayhaa .about-ayhaa .new-ayha i 
+    {
+        font-size: 22px;
+        color: var(--color-white);
+        margin: 0px 5px;
+    }
+    .color-white
+    {
+        color: var(--color-white);
+    }
+    .fa-repeat , .fa-copy
+    {
+        cursor: pointer;
+    }
+    @media (min-width:700px)
+    {
+        .ayha-today-box .inbox-ayhaa textarea
+        {
+            width: 600px;
+        }
+    }
+    /* start poope */
+    .poope-choose
+    {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .poope-choose .content
+    {
+        width: 290px;
+        background: url('image/pattern-poope.svg');
+        background-position: center;
+        background-size: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+    }
+    .poope-choose .content button 
+    {
+        padding: 11px;
+        cursor: pointer;
+        width: 90%;
+        transition: 0.4s transform ease-in-out;
+        outline: none;
+        text-align: center;
+        border: none;
+        background-color: var(--color-secandry);
+        color: var(--color-white);
+        border-radius: 10px;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    .poope-choose .content button:hover
+    {
+        transform: scale(1.05);
+    }
+    .poope-choose .close
+    {
+        position: absolute;
+        right: -30px;
+        top: 10px;
+        color: var(--color-white);
+        background-color: var(--color-main);
+        padding: 10px;
+    }
+    .back
+    {
+        width: 30% !important;
+        background-color: var(--color-adding) !important;
+    }
+    .mobiles-icons
+    {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--color-white);
+        cursor: pointer;
+        animation: todo 0.5s ease-in-out infinite;
+    }
+  
+    </style>
+</head>
+<body>
+    <div class="page-loading">
+        <div class="content">
+            <div class="img-content">
+                <img width="150px" src="image/loading.gif" alt="">
+            </div>
+            <div class="bottom-image">
+            <div class="title-content">
+                جاري تحميل الصفحة
+            </div>
+            <div class="text-content text-center">
+                
+            </div>
+        </div>
+        </div>
+    </div>
+        <nav>
+            <input  type="checkbox" name="" id="nav-toggle">
+            <div class="logo">
+               <img src="image/logo-header.png" alt="">
+           </div>
+                   <ul class="links">
+                <li class="active-nav"><a  href="">الصفحة الرئيسية</a></li>
+                <li><a href="files/hadith.html">أحاديث نبوية</a></li>
+                <li><a href="files/quran.html">القرآن الكريم</a></li>
+                <li><a href="files/tfser.html">تفسير القرآن الكريم</a></li>
+                <li><a href="files/section-azkar.html">أذكار</a></li>
+                <li><a href="files/section-duaa.html">أدعية</a></li>
+                <!-- new link
+                     <li><a href=""></a></li>
+                   -->
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>   
+      
+      <a href="#">  <i class="fa-solid fa-angles-up"></i> </a>
+
+        <article class="mobile">
+          
+            <div class="parent-article">
+                <div class="card-content">
+                    <div class="title-content-article">
+                        أهلا وسهلاً بكم في منصة مسلمون
+                    </div>
+                    <div class="context-article">
+                        
+                        <button class="explore">تصفح المنصة</button>
+
+                    </div>
+                    <div class="footer-article">
+                        <a href="#content-center"><i class="fa-solid fa-angles-down  mobiles-icons"></i></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="desktop">
+        <div class="section-right">
+            <img src="image/phone.png" alt="">
+        </div>
+        <div class="section-left">
+            <h3>منصة مسلمون 
+            </h3>
+            <div class="button-inbox">
+                <button class="download-btn">تحميل التطبيق</button>
+                <button class="explore-btn">تصفح المنصة</button>
+            </div>
+        </div>
+        <a href="#content-center">  <i class="fa-solid fa-angles-down"></i> </a>
+    </article>
+    <div class="ayha-today-box">
+        <div class="title-section">
+            آية اليوم
+        </div>
+        <div class="inbox-ayhaa">
+            <textarea readonly name="" id="inbox_ayhaa_random"></textarea>
+            <div class="about-ayhaa">
+                <div class="new-ayha">
+                    <i onclick="randomayhaa()" class="fa-solid fa-repeat"></i>  
+                    <i class="fa-regular fa-copy"></i>   
+                </div>
+                <div class="info-ayhaa">
+                
+
+                </div>
+             
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <main id="content-center">
+        <div class="title-section">
+            الأقسام
+        </div>
+        <div class="card-group">
+
+            <div class="card">
+                <div class="row">
+                    <div class="left-icon">
+                        <img src="image/quran-book.png" alt="">
+                    </div>
+                    <div class="right-content">
+                    <div class="rigth-text">
+                        القرآن الكريم
+                    </div>
+                    <div class="content-card">
+                        تصفح كتاب الله بالكامل
+                
+                                </div>
+                                <div class="card-footer">
+                                    محدث
+                                </div>
+                            </div>
+                </div>
+      
+            </div>
+            <div class="card">
+                <div class="row">
+                    <div class="left-icon">
+                        <img src="image/ahadis.png" alt="">
+                    </div>
+                    <div class="right-content">
+                    <div class="rigth-text">
+                        احاديث نبوية
+                    </div>
+                    <div class="content-card">
+                        تصفح العديد من الأحاديث 
+                
+                                </div>
+                                <div class="card-footer">
+                                    محدث
+                                </div>
+                            </div>
+                </div>
+      
+            </div>
+
+            <div class="card">
+                <div class="row">
+                    <div class="left-icon">
+                        <img src="image/tfseer-quran.png" alt="">
+                    </div>
+                    <div class="right-content">
+                    <div class="rigth-text">
+                        تفسير القرآن 
+                    </div>
+                    <div class="content-card">
+                       تقسير القرآن الكريم كاملاً
+                
+                                </div>
+                                <div class="card-footer">
+                                    محدث
+                                </div>
+                            </div>
+                </div>
+      
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <div class="row">
+                    <div class="left-icon">
+                        <img src="image/lession-islamic.png" alt="">
+                    </div>
+                    <div class="right-content">
+                    <div class="rigth-text">
+                        محاضرات إسلامية
+                    </div>
+                    <div class="content-card">
+                       العديد من المحاضرات لك
+                
+                                </div>
+                                <div class="card-footer">
+                                    محدث
+                                </div>
+                            </div>
+                </div>
+      
+            </div>
+
+            <div class="card">
+                <div class="row">
+                    <div class="left-icon">
+                        <img src="image/decoration.png" alt="">
+                    </div>
+                    <div class="right-content">
+                    <div class="rigth-text">
+                        دليل القبلة
+                    </div>
+                    <div class="content-card">
+                        حدد القبلة بكاميرا هاتفك 
+                
+                                </div>
+                                <div class="card-footer">
+                                    محدث
+                                </div>
+                            </div>
+                </div>
+      
+            </div>
+            <div class="card">
+                <div class="row">
+                    <div class="left-icon">
+                        <img src="image/masquee-qreb.png" alt="">
+                    </div>
+                    <div class="right-content">
+                    <div class="rigth-text">
+                         دليل المساجد 
+                    </div>
+                    <div class="content-card">
+                       تجد أقرب المساجد إليك                
+                                </div>
+                                <div class="card-footer">
+                                    محدث
+                                </div>
+                            </div>
+                </div>
+      
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <div class="row">
+                    <div class="left-icon">
+                        <img src="image/azkar.png" alt="">
+                    </div>
+                    <div class="right-content">
+                    <div class="rigth-text">
+                        أذكار السنة
+                    </div>
+                    <div class="content-card">
+                       العديد من الأذكار الصوتية
+                
+                                </div>
+                                <div class="card-footer">
+                                    محدث
+                                </div>
+                            </div>
+                </div>
+      
+            </div>
+
+            <div class="card">
+                <div class="row">
+                    <div class="left-icon">
+                        <img src="image/adeaa.png" alt="">
+                    </div>
+                    <div class="right-content">
+                    <div class="rigth-text">
+                       أدعية
+                    </div>
+                    <div class="content-card">
+                        العديد من الأدعية الصوتية
+                
+                                </div>
+                                <div class="card-footer">
+                                    محدث
+                                </div>
+                            </div>
+                </div>
+      
+            </div>
+            <div class="card">
+                <div class="row">
+                    <div class="left-icon">
+                        <img src="image/story.png" alt="">
+                    </div>
+                    <div class="right-content">
+                    <div class="rigth-text">
+                       قصص إسلامية 
+                    </div>
+                    <div class="content-card">
+                        كتب وقصص إسلامية 
+                
+                                </div>
+                                <div class="card-footer">
+                                    محدث
+                                </div>
+                            </div>
+                </div>
+      
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <div class="row">
+                    <div class="left-icon">
+                        <img src="image/timer.png" alt="">
+                    </div>
+                    <div class="right-content">
+                    <div class="rigth-text">
+                        أوقات الصلاة
+                    </div>
+                    <div class="content-card">
+                       مواقيت الأذان  لبلدك
+                
+                                </div>
+                                <div class="card-footer">
+                                    محدث
+                                </div>
+                            </div>
+                </div>
+      
+            </div>
+
+            <div class="card">
+                <div class="row">
+                    <div class="left-icon">
+                        <img src="image/sdka.png" alt="">
+                    </div>
+                    <div class="right-content">
+                    <div class="rigth-text">
+                       صدقة جارية
+                    </div>
+                    <div class="content-card">
+                        صدقة جارية للموتى 
+                
+                                </div>
+                                <div class="card-footer">
+                                    محدث
+                                </div>
+                            </div>
+                </div>
+      
+            </div>
+            <div class="card">
+                <div class="row">
+                    <div class="left-icon">
+                        <img src="image/timer-ramadan.png" alt="">
+                    </div>
+                    <div class="right-content">
+                    <div class="rigth-text">
+                      عداد رمضان
+                    </div>
+                    <div class="content-card">
+                       الوقت المتبقي  لرمضان 
+                                </div>
+                                <div class="card-footer">
+                                    محدث
+                                </div>
+                            </div>
+                </div>
+      
+            </div>
+        </div>
+    </main>
+    <aside>
+        <div class="title-section">
+            حول مسلمون
+        </div>
+        <div class="card-content-aside">
+            <div class="card-group">
+                <div class="card-col">
+                    <div class="icon-aside">
+                        <i class="fa-solid fa-users fa-2x"></i>
+                    </div>
+                    <div class="content-aside-bottom">
+                        قارئ
+                        <strong>+100</strong>
+                    </div>
+                </div>
+                <div class="card-col">
+                    <div class="icon-aside">
+                        <i class="fa-solid fa-book-bookmark fa-2x"></i>
+                    </div>
+                    <div class="content-aside-bottom">
+                        محاضرة
+                        <strong>+120</strong>
+                    </div>
+                </div>
+                <div class="card-col">
+                    <div class="icon-aside">
+                        <i class="fa-solid fa-user fa-2x"></i>
+                    </div>
+                    <div class="content-aside-bottom">
+                         مستخدم
+                         <strong>+100</strong>
+                    </div>
+                </div>
+           
+            </div>
+        </div>
+    </aside>
+    <section>
+        <div class="card-section-group">
+            <div class="image-logo-right">
+                <img src="image/logo-orginal.png" alt="muslims logo">
+            </div>
+            <div class="about-muslims-text">
+                <div class="text-title">
+                    <h3>مسلمون</h3>
+                </div>
+                <div class="text-paragraph-about">
+                    تسعى (منصة مسلمون)
+                    <p>
+                     إلى ترسيخ القيم الإسلامية، وتحقيق جملة من الأهداف، ومنها:
+                    </p>
+                    <p>
+                    "نشر العقيدة الإسلامية الصحيحة، والعلوم الشرعية المبنية على الدليل من الكتاب والسنة.
+                </p>
+
+                <p>
+                    "الاهتمام بدعوة غير المسلمين بالطريقة الصحيحة، وفق المنهج القويم.
+                </p>
+
+                <p>
+                    "جمع كلمة المسلمين، والتواصل والحوار مع الآخرين، ضمن الثوابت.   
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="poope-choose ds-none">
+        <div class="content">
+            <button class="btn-poope-choose">
+                <i class="fa-solid fa-language"></i>
+                     القرآن الكريم (نصي)
+                <i class="fa-solid fa-text-width"></i>
+
+            </button>
+            <button class="btn-poope-choose">
+                <i class="fa-solid fa-language"></i>
+                    القرآن الكريم (بالصوت)
+                <i class="fa-solid fa-headphones"></i>
+
+            </button>
+            <button class="btn-poope-choose">
+                <i class="fa-solid fa-language"></i>
+                    القرآن الكريم (بالصور)
+                <i class="fa-solid fa-image"></i>
+
+            </button>
+            <button class="back">العودة
+                <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+
+
+        </div>
+
+    </div>
+    <footer>
+<div class="footer-content">
+    <div class="countinear-plus">
+        <a href="https://ia800105.us.archive.org/27/items/Quran-Kareem-Khawagah-The-Blue-Page-Quran/Quran-Kareem-Khawagah-The-Blue-Page-Quran.pdf">تحميل القرآن الكريم</a>
+        <a href="files/tfser.html">تفسير القرآن الكريم</a>
+        <a href="files/quran-audios.html"> القرآن الكريم بالصوت</a>
+        <a href="files/charity.html">تحميل تطبيق مسلمون</a>
+    </div>
+            <div class="footer-icon-socail-media">
+                <a href="https://www.facebook.com/m0uslims"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://t.me/m0uslims"> <i class="fa-brands fa-telegram"></i></a>
+                <a href="https://m.me/m0uslims"> <i class="fa-brands fa-facebook-messenger"></i></a>
+                <a href="https://t.me/m0uslims"><i class="fa-brands fa-slack"></i></a>
+                </div>
+            <div class="copyrigth-box">
+        مسلمون 2022
+            </div>
+        </div>
+            </footer>
+    <script>
+        let explore = document.querySelector('.explore'),
+        btn_downed = document.querySelector('.fa-angles-down'),
+        btn_explore = document.querySelector('.explore-btn')
+        , cards_section = document.querySelectorAll('.card'),
+        btn_choose = document.querySelectorAll('.btn-poope-choose');
+        //btn click choose poope
+        btn_choose[0].addEventListener('click',()=>{
+            location.href="files/quran.html";
+        })
+        btn_choose[1].addEventListener('click',()=>{
+            location.href="files/quran-audios.html";
+
+        })
+        btn_choose[2].addEventListener('click',()=>{
+            location.href="files/quran-image.html";
+
+        })
+      cards_section[1].addEventListener('click',()=>{
+            location.href='files/hadith.html';
+        })
+
+        cards_section[2].addEventListener('click',()=>{
+            location.href='files/tfser.html';
+        })
+
+        cards_section[3].addEventListener('click',()=>{
+            location.href='files/lessions.html';
+        })
+        cards_section[4].addEventListener('click',()=>{
+            location.href='files/qubla-finder.html';
+        })
+        cards_section[5].addEventListener('click',()=>{
+            
+        })
+        cards_section[6].addEventListener('click',()=>{
+            location.href = 'files/section-azkar.html';
+        })
+        cards_section[7].addEventListener('click',()=>{
+            location.href='files/section-duaa.html';
+        })
+        cards_section[8].addEventListener('click',()=>{
+            location.href='files/islamic-books.html';
+        })
+        cards_section[9].addEventListener('click',()=>{
+            location.href = 'files/prayer-time.html';
+        })
+        cards_section[10].addEventListener('click',()=>{
+            location.href='files/charity.html';
+        })
+        cards_section[11].addEventListener('click',()=>{
+            location.href='files/time-ramadan.html';
+        })
+
+        btn_explore.addEventListener('click',function(){
+            btn_downed.click();
+        })
+
+        explore.addEventListener('click', ()=>{
+            btn_downed.click();
+        })
+        let inbox_ayhaa = document.querySelector('#inbox_ayhaa_random')
+        ,
+        card = document.querySelectorAll('.card')
+        ,
+        close_poope = document.querySelector('.back')
+        ,
+        poope_choos_type = document.querySelector('.poope-choose')
+        ,
+        inbox_info = document.querySelector('.info-ayhaa')
+        , replace = document.querySelector('.fa-repeat')
+        ,btncopy = document.querySelector('.fa-copy');
+        ;
+        function randomayhaa(){
+        fetch('http://quranapi.azurewebsites.net/api/verse/').then(response => response.json()).then(data => {
+            inbox_ayhaa.innerText = data.Text;
+            inbox_info.innerHTML = `
+            
+            <div class="text-info color-white">
+                       سورة ${data.ChapterName}
+                    </div>
+                    <div class="number-ayhaa color-white">
+                        الآية رقم ${data.Id}
+                    </div>
+            
+            `
+        })
+    }
+    card[0].addEventListener('click',function(){
+        poope_choos_type.classList.remove('ds-none');
+    })
+    close_poope.addEventListener('click',function(){
+        poope_choos_type.classList.add('ds-none');
+    })
+    randomayhaa();
+    btncopy.addEventListener('click',function(event){
+        inbox_ayhaa.focus();
+        inbox_ayhaa.select();
+        try {
+          let successful = document.execCommand('copy');
+          let msg = successful ? 'نجح' : 'لم ينجح';
+          alert('نسخ النص ' + msg);
+        } catch(err) {
+          alert('أعد المحاولة');
+        }
+    })
+    </script>
+    <script src="js-app/app.js"></script>
+    <script src="https://kit.fontawesome.com/64e995aa72.js" crossorigin="anonymous"></script>
+</body>
+</html>

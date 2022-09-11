@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Description and Keywords (start) -->
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <meta content='تفسير القرآن الكريم حرفياً بشكل كامل ومرتب' name='description'/>
+    </b:if>
+    <meta content='القرآن الكريم,تفسير القرآن الكريم,القرآن الكريم تفسير' name='keywords'/>
+    <!-- Description and Keywords (end) -->
+   <!-- Social Media meta tag need customer customization -->
+    <meta content='101629945938501' property='fb:app_id'/>
+    <meta name="theme-color" content="#0c6d7e">
+    <link rel="stylesheet" href="../css-app/all.css">
+
+    <!--font-fetch-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&family=Changa:wght@500&family=Noto+Kufi+Arabic&family=Readex+Pro:wght@600&family=Red+Hat+Mono:ital,wght@1,300&family=Tajawal&display=swap" rel="stylesheet">
+    <title>تفسير القرآن الكريم</title>
+    <style>
+        main
+        {
+            width: 100%;
+            height: 100%;
+            margin-top: 100px;
+        }
+        main .cards-group 
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 20px 0px;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: inherit;
+        }
+        main .card 
+        {
+            width: 90%;
+            padding: 10px;
+            border-radius: 3.60px;
+            margin: 5px 0px;
+            border: 2px solid rgba(0.0.0.0,5);
+            background-color: var(--color-white);
+            margin-top: -300px;
+        }
+        main .cards-group .title-card
+        {
+            background-color: var(--color-main);
+            color: var(--color-white);
+            padding: 5px;
+            margin: 5px 0px;
+        }
+        main .cards-group .card .body-card
+        {
+            font-weight: bold;
+            color: var(--color-main);
+        }
+        main .cards-group .card .footer-card
+        {
+            font-weight: bold;
+            border-top: 2px solid var(--color-adding);
+        }
+        .cards-group select {
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        main .cards-group .card .found-tfser
+        {
+            margin: 5px 0px;
+            padding: 10px;
+            width: 100%;
+            color: var(--color-white);
+            background-color: var(--color-secandry);
+            cursor: pointer;
+            border: none;
+            transition: 0.5s all ease-in-out;
+            border-radius: 5px;
+        }
+        main .cards-group .card .found-tfser:hover 
+        {
+            background-color: var(--color-adding);
+            color: var(--color-main);
+        }
+        @media (min-width:770px)
+        {
+            main .card 
+            {
+                width: 50%;
+            }
+        }
+        .poope
+        {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            overflow-y: scroll;
+            z-index: 3;
+            background-color: var(--color-white);
+        }
+        .poope .content-poope
+        {
+            padding:20px;
+            margin-top: 100px;
+
+        }
+        .poope .content-poope .close-btn
+        {
+            font-size: 30px;
+            position: absolute;
+            color: var(--color-main);
+            cursor: pointer;
+            right: 20px;
+            top: 90px;
+            transition: 0.5s color ease-in-out;
+        }
+        .poope .content-poope .close-btn:hover
+        {
+            color: var(--color-secandry);
+        }
+        .poope .body-card
+        {
+            font-weight: bold;
+            color: var(--color-main);
+            margin-top: 20px;
+            text-align: center;
+            border: 1px solid var(--color-adding);
+        }
+        .poope .body-card .footer-poope
+        {
+            color: var(--color-white);
+            background-color: var(--color-main);
+            padding: 5px;
+        }
+    </style>
+    </head>
+    <body>
+        
+        <nav>
+            <input  type="checkbox" name="" id="nav-toggle">
+            <div class="logo">
+               <img src="../image/logo-header.png" alt="">
+           </div>
+           <ul class="links">
+            <li ><a  href="../index.html">الصفحة الرئيسية</a></li>
+            <li><a href="hadith.html">أحاديث نبوية</a></li>
+            <li><a href="quran.html">القرآن الكريم</a></li>
+            <li class="active-nav"><a href="tfser.html">تفسير القرآن الكريم</a></li>
+            <li><a href="section-azkar.html">أذكار</a></li>
+            <li><a href="section-duaa.html">أدعية</a></li>
+            <!-- new link
+                <li><a href=""></a></li>
+            -->
+        </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav> 
+        <main>
+            <div class="title-section">
+                تفسير القرآن الكريم
+              </div>
+            <div class="cards-group">
+                <div class="card">
+
+                    <div class="title-card">اختر السورة المراد تفسيرها</div>
+                    <select name="" id="select_sora">
+                    
+                  </select>
+                  <button class="found-tfser">إيجاد التفسير</button>
+                </div>
+
+            </div>
+        </main>
+
+        <div class="poope ds-none">
+            <div class="content-poope">
+                <div class="close-btn">
+                    x
+                </div>
+                <div class="body-card">
+
+                <div class="footer-poope">
+
+            </div>
+                <div class="text-poope">
+               
+                </div>
+                <div class="title-poope">
+
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+    <footer>
+            <div class="footer-content">
+                <div class="countinear-plus">
+                    <a href="https://ia800105.us.archive.org/27/items/Quran-Kareem-Khawagah-The-Blue-Page-Quran/Quran-Kareem-Khawagah-The-Blue-Page-Quran.pdf">تحميل القرآن الكريم</a>
+                    <a href="tfser.html">تفسير القرآن الكريم</a>
+                    <a href="quran-audios.html"> القرآن الكريم بالصوت</a>
+                    <a href="quran-image.html">تحميل تطبيق مسلمون</a>
+                </div>
+                <div class="footer-icon-socail-media">
+                    <a href="https://www.facebook.com/m0uslims"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://t.me/m0uslims"> <i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://m.me/m0uslims"> <i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href="https://t.me/m0uslims"><i class="fa-brands fa-slack"></i></a>
+                    </div>
+                <div class="copyrigth-box">
+            مسلمون 2022
+                </div>
+            </div>
+                </footer>          
+                <div class="page-loading">
+                    <div class="content">
+                        <div class="img-content">
+                            <img width="150px" src="../image/loading.gif" alt="">
+                        </div>
+                        <div class="bottom-image">
+                        <div class="title-content">
+                            جاري تحميل الصفحة
+                        </div>
+                        <div class="text-content text-center">
+                            
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+        <script>
+          
+
+ 
+     
+            function gettfser()
+            {
+                fetch('http://api.alquran.cloud/v1/surah').then(response => response.json()).then(data => {
+                    let countinear_choose_sora = document.querySelector('#select_sora');
+                    for(let i=0;i<114;i++){
+                        countinear_choose_sora.innerHTML += `
+                        <option value=${data.data[i].number}>${data.data[i].name} </option>
+                        
+                        `
+                    } 
+                })
+
+
+                fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions/ara-jalaladdinalmah.json').then(response => response.json()).then(data =>{
+                    let ayah_login = data.quran;
+                    let countinear_tfser = document.querySelector('.body-card');
+                    let btn_found_tfser = document.querySelector('.found-tfser');
+                    let poope = document.querySelector('.poope');
+
+                    ayah_login.forEach(sora => {
+                        let select_sora = document.querySelector('#select_sora');
+                        btn_found_tfser.addEventListener('click',function(){
+
+                            if(sora.chapter==select_sora.value)
+                            {
+                                poope.classList.remove('ds-none');
+                            countinear_tfser.innerHTML += `
+                            <div class="footer-poope">
+                    الآية رقم ${sora.verse}
+            </div>
+                <div class="text-poope">
+               ${sora.text}
+                </div>
+                <div class="title-poope">
+                   السورة رقم ${sora.chapter} 
+                </div>
+                            
+                            `
+                   
+                            }
+
+                            let close_poope = document.querySelector('.close-btn');
+                  close_poope.addEventListener('click',function(){
+                    countinear_tfser.innerHTML="";
+                    poope.classList.add('ds-none');
+                  })
+                        })
+              
+
+                        
+                    });
+                })
+            }
+            gettfser();
+        /*
+                    
+                        <div class="card">
+                    <div class="title-card">
+                        السورة رقم ${sora.chapter}
+                    </div>
+                    <div class="body-card">
+                        ${sora.text}
+                    </div>
+                    <div class="footer-card">
+                        الآية رقم ${sora.verse}
+                    </div>
+                </div>
+        */
+        </script>
+           <script src="../js-app/app.js"></script>
+
+        <script src="https://kit.fontawesome.com/64e995aa72.js" crossorigin="anonymous"></script>
+    </body>
+    </html>

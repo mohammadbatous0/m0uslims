@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Description and Keywords (start) -->
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <meta content='عداد الوقت المتبقي لشهر رمضان الكريم بدقة متناهية' name='description'/>
+    </b:if>
+    <meta content='رمضان,الوقت المتبقي لشهر رمضان 2023,رمضان 2023' name='keywords'/>
+    <!-- Description and Keywords (end) -->
+   <!-- Social Media meta tag need customer customization -->
+    <meta content='101629945938501' property='fb:app_id'/>
+    <meta name="theme-color" content="#0c6d7e">
+    <link rel="stylesheet" href="../css-app/all.css">
+
+    <!--font-fetch-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&family=Changa:wght@500&family=Noto+Kufi+Arabic&family=Readex+Pro:wght@600&family=Red+Hat+Mono:ital,wght@1,300&family=Tajawal&display=swap" rel="stylesheet">
+    <title>عداد رمضان</title>
+    <style>
+ .countinear 
+{
+    display: flex;
+    min-height: 100%;
+    margin:auto;
+    margin-top: 100px;
+    width:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card 
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--color-white);
+}
+.card-body
+{
+    padding: 0px;
+}
+.card-img-top
+{
+    width: 350px;
+}
+.t11
+{
+    background-color: var(--color-main);
+    color: var(--color-white);
+    padding: 5px;
+}
+.parent-image
+{
+  margin: auto;
+}
+.inbox_timer
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.inbox_timer > p 
+{
+    font-weight: bold;
+    font-size: 25px;
+}
+#contnet-main
+{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+@media (max-width:500px)
+{
+  #contnet-main
+  {
+    flex-direction: column;
+  }
+  .card{
+    width: 80%;
+  }
+  .parent-image
+  {
+    padding: 5px;
+  }
+  .parent-image img 
+  {
+    width: 300px;
+  }
+
+}
+    </style>
+    </head>
+    <body>
+      <nav>
+        <input  type="checkbox" name="" id="nav-toggle">
+        <div class="logo">
+           <img src="../image/logo-header.png" alt="">
+       </div>
+       <ul class="links">
+        <li class="active-nav"><a  href="../index.html">الصفحة الرئيسية</a></li>
+        <li><a href="hadith.html">أحاديث نبوية</a></li>
+        <li><a href="quran.html">القرآن الكريم</a></li>
+        <li><a href="tfser.html">تفسير القرآن الكريم</a></li>
+        <li><a href="section-azkar.html">أذكار</a></li>
+        <li><a href="section-duaa.html">أدعية</a></li>
+        <!-- new link
+            <li><a href=""></a></li>
+        -->
+    </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav> 
+      <div class="countinear">
+        <div class="card-group text-center mainn">
+            <div style="margin:auto;" class="card">
+                <div class="card-body">
+                    <div id="title1" class="card-title t11">الوقت المتبقي 
+                        لرمضان
+                    </div>
+                  <div class="card-text" style="display: inline-block;">
+                  <div id="contnet-main">
+                    <div class="inbox_timer">
+                    <h2 id="day">الأيام المتبقية</h2>
+                  <p id="day-time"></p>
+                </div>
+                <div class="inbox_timer">
+                  <h2 id="hour">الساعات</h2>
+                  <p id="hour-time"></p>
+                </div>
+                <div class="inbox_timer">
+                  <h2 id="minute">الدقائق</h2>
+                  <p id="minute-time"></p>
+                </div>
+                <div class="inbox_timer">
+                  <h2 id="second">الثواني</h2>
+        
+                  <p id="second-time"></p>
+                </div>  
+                </div>
+                  </div>
+                </div>
+                <div class="parent-image">
+              <img  src="../image/image-time.svg" class="card-img-top m-auto " id="images" alt="">
+            </div>
+            <p style="color:var(--color-main);">
+              رمضان 2023
+            </p>
+            </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+      <footer>
+            <div class="footer-content">
+                <div class="countinear-plus">
+                    <a href="https://ia800105.us.archive.org/27/items/Quran-Kareem-Khawagah-The-Blue-Page-Quran/Quran-Kareem-Khawagah-The-Blue-Page-Quran.pdf">تحميل القرآن الكريم</a>
+                    <a href="tfser.html">تفسير القرآن الكريم</a>
+                    <a href="quran-audios.html"> القرآن الكريم بالصوت</a>
+                    <a href="quran-image.html">تحميل تطبيق مسلمون</a>
+                </div>
+                <div class="footer-icon-socail-media">
+                    <a href="https://www.facebook.com/m0uslims"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://t.me/m0uslims"> <i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://m.me/m0uslims"> <i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href="https://t.me/m0uslims"><i class="fa-brands fa-slack"></i></a>
+                    </div>
+                <div class="copyrigth-box">
+            مسلمون 2022
+                </div>
+            </div>
+                </footer>
+
+                <div class="page-loading">
+                  <div class="content">
+                      <div class="img-content">
+                          <img width="150px" src="../image/loading.gif" alt="">
+                      </div>
+                      <div class="bottom-image">
+                      <div class="title-content">
+                          جاري تحميل الصفحة
+                      </div>
+                      <div class="text-content text-center">
+                          
+                      </div>
+                  </div>
+                  </div>
+              </div>
+
+
+
+            <script>
+                 const timer = function timer()
+      {
+        const countdate = new Date(`April 15 2023 00:00:00`).getTime();
+        const now = new Date().getTime();
+              if (now > countdate)
+              {
+                clearInterval(timer_click);
+                document.getElementById("day-time").innerText="0";
+                document.getElementById("hour-time").innerText="0";
+                document.getElementById("minute-time").innerText="0";
+                document.getElementById("second-time").innerText="0";
+              }
+else{
+        const now = new Date().getTime();
+        const gap = countdate-now;
+        const second = 1000;
+        const minute = second*60;
+        const hour = minute*60;
+        const day = hour * 24;
+        //calcuate
+        const textday = Math.floor(gap/day);
+        const texthour = Math.floor((gap%day)/hour);
+        const textminute = Math.floor((gap%hour)/minute);
+        const textsecond = Math.floor((gap%minute)/second);
+        document.getElementById("day-time").innerText=textday;
+        document.getElementById("hour-time").innerText=texthour;
+        document.getElementById("minute-time").innerText=textminute;
+        document.getElementById("second-time").innerText=textsecond;
+}
+
+      }
+      var timer_click =  setInterval(timer,1000);
+
+            </script>
+           <script src="../js-app/app.js"></script>
+
+    <script src="https://kit.fontawesome.com/64e995aa72.js" crossorigin="anonymous"></script>
+</body>
+</html>
