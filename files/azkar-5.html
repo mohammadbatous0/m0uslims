@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Description and Keywords (start) -->
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <meta content='تجد جميع أذكار المسلمين بالصوت مع إمكانية تحميل النطق' name='description'/>
+    </b:if>
+    <meta content='أذكار الصباح , أذكار المساء , أذكار , أذكار الصباح و المساء' name='keywords'/>
+    <!-- Description and Keywords (end) -->
+   <!-- Social Media meta tag need customer customization -->
+    <meta content='101629945938501' property='fb:app_id'/>
+    <meta name="theme-color" content="#0c6d7e">
+    <link rel="stylesheet" href="../css-app/all.css">
+    <!--font-fetch-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&family=Changa:wght@500&family=Noto+Kufi+Arabic&family=Readex+Pro:wght@600&family=Red+Hat+Mono:ital,wght@1,300&family=Tajawal&display=swap" rel="stylesheet">
+    <title>أذكار</title>
+    <style>
+        /* start content */
+        main , .card-azkar-content 
+        {   margin-top: 60px;
+            width: 100%;
+        }
+        body
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-azkar-content .card-group-azkar
+        {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            gap: 10px;
+
+        }
+        .card-azkar-content .card-group-azkar .card-azkar
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            overflow-y: auto;
+            background-color: var(--color-white);
+            border: 2px dotted var(--color-main);
+            border-radius: 5px;
+            width: 22rem;
+            margin: 5px;
+        }
+        .card-azkar-content .card-group-azkar .card-azkar .card-title-azkar
+        {
+            background-color: var(--color-main);
+            color: var(--color-white);
+            width: 100%;
+            padding: 5px;
+        }
+        .card-azkar-content .card-group-azkar .card-azkar .content-azkar
+        {
+            font-weight: bold;
+            font-size: 18px;
+            margin: 5px 0px;
+            min-height: 200px;
+            max-height: 300px;
+            overflow: auto;
+            border-bottom: 1px solid rgba(0,0,0,0.4);
+        }
+        .card-azkar-content .card-group-azkar .card-azkar .coutn-azkar
+        {
+            color: var(--color-main);
+        }
+        .card-azkar-content .card-group-azkar .card-azkar .button-azkar-next 
+        {
+            width: 90%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+        }
+        .card-azkar-content .card-group-azkar .card-azkar .button-azkar-next > button
+        {
+            width: inherit;
+            cursor: pointer;
+            padding: 7px;
+            margin: 3px 5px;
+            background-color: var(--color-main);
+            color: var(--color-white);
+            border-radius: 5px;
+            border: none;
+            transition: 0.3s background-color ease-in;
+            outline: none;
+        }
+        .card-azkar-content .card-group-azkar .card-azkar .button-azkar-next > button:hover 
+        {
+            background-color: var(--color-secandry);
+        }
+
+        .card-azkar-content .card-group-azkar .card-azkar .btn-download-audio
+        {
+            cursor: pointer;
+            padding: 7px;
+            margin: 3px 5px;
+            background-color: var(--color-secandry);
+            color: var(--color-white);
+            border-radius: 5px;
+            border: none;
+            width: 90% !important;
+            transition: 0.3s background-color ease-in;
+            outline: none;
+        }
+        .card-azkar-content .card-group-azkar .card-azkar .btn-download-audio:hover
+        {
+            background-color: var(--color-main);
+        }
+        .btn-group
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            
+        }
+        /* message end style */
+        .end-audio
+        {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0,0,0,0.4);
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+        .end-audio .content-end
+        {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .end-audio .content-end .content-mesage
+        {
+            padding: 20px;
+            background-color: var(--color-main);
+            color: var(--color-white);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <input  type="checkbox" name="" id="nav-toggle">
+        <div class="logo">
+           <img src="../image/logo-header.png" alt="">
+       </div>
+              <ul class="links">
+                <li ><a  href="../index.html">الصفحة الرئيسية</a></li>
+                <li><a href="hadith.html">أحاديث نبوية</a></li>
+                <li><a href="quran.html">القرآن الكريم</a></li>
+                <li><a href="tfser.html">تفسير القرآن الكريم</a></li>
+                <li class="active-nav"><a href="section-azkar.html">أذكار</a></li>
+                <li><a href="section-duaa.html">أدعية</a></li>
+                 <!-- new link
+                     <li><a href=""></a></li>
+                   -->
+            </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav> 
+    <main>
+        <div class="card-azkar-content">
+            <div class="card-group-azkar">
+                
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+<div class="end-audio ds-none">
+    <div class="content-end">
+        <div class="content-mesage">
+            تم الإستماع بنجاح .. الحمدلله
+        </div>
+    </div>
+</div>
+
+    <footer>
+            <div class="footer-content">
+                <div class="countinear-plus">
+                    <a href="https://ia800105.us.archive.org/27/items/Quran-Kareem-Khawagah-The-Blue-Page-Quran/Quran-Kareem-Khawagah-The-Blue-Page-Quran.pdf">تحميل القرآن الكريم</a>
+                    <a href="tfser.html">تفسير القرآن الكريم</a>
+                    <a href="quran-audios.html"> القرآن الكريم بالصوت</a>
+                    <a href="quran-image.html">تحميل تطبيق مسلمون</a>
+                </div>
+                <div class="footer-icon-socail-media">
+                    <a href="https://www.facebook.com/m0uslims"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://t.me/m0uslims"> <i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://m.me/m0uslims"> <i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href="https://t.me/m0uslims"><i class="fa-brands fa-slack"></i></a>
+                    </div>
+                <div class="copyrigth-box">
+            مسلمون 2022
+                </div>
+            </div>
+                </footer>      <div class="page-loading">
+            <div class="content">
+                <div class="img-content">
+                    <img width="150px" src="../image/loading.gif" alt="">
+                </div>
+                <div class="bottom-image">
+                <div class="title-content">
+                    جاري تحميل الصفحة
+                </div>
+                <div class="text-content text-center">
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <script>
+        /*
+        async function getdata(){
+            const response = await fetch('https://azkar-api.nawafhq.repl.co/zekr?m&json');
+            const data = await response.json();
+            console.log(data.content);
+
+            <i class="fa-regular fa-square-plus"></i>
+            <i class="fa-solid fa-circle-play"></i>
+
+
+
+
+
+
+        }*/
+        function getzekr()
+        {
+            let countinear_zekr = document.querySelector('.card-group-azkar');
+            fetch('https://www.hisnmuslim.com/api/ar/9.json').then(response => response.json()).then(data => {
+                var title_zkr = "الذكر بعد الفراغ من الوضوء";
+                function plays1s(i)
+                {
+                    
+                        audios[i].play();
+                }
+                for(let i =0;i<3;i++)
+                {
+                    countinear_zekr.innerHTML += 
+                    `
+                    <div class="card-azkar">
+                    <div class="card-title-azkar">
+                        ${title_zkr}
+                    </div>
+                    <div class="content-azkar">
+                       ${data[title_zkr][i].ARABIC_TEXT}
+                    </div>
+                    <div class="coutn-azkar">
+                        عدد التكرارات : ${data[title_zkr][i].REPEAT}
+                    </div>
+                    <div class='btn-group'>
+                    <div class="button-azkar-next">
+                        <button class='tkrar'>تكرار
+                            <i class="fa-regular fa-square-plus"></i>
+
+                        </button>
+                        <button class='play-zkr'>تشغيل الذكر
+                            <i class="fa-solid fa-circle-play"></i>
+
+                        </button>
+
+                    </div>
+                    <button class='btn-download-audio'>تحميل لفظ الذكر
+                            <i class="fa-solid fa-download"></i>
+                            </button>
+                        </div>
+                </div>
+                <audio class='plays' controls preload autoplay style="display:none !important">
+
+                </audio>
+                    
+                    `
+                }
+              let play_zkr = document.querySelectorAll('.play-zkr');
+              let audios = document.querySelectorAll('.plays');
+              play_zkr.forEach((element,index) =>{
+                element.addEventListener('click',function gets(){
+                    audios[index].innerHTML = `
+                    <source src="${data[title_zkr][index].AUDIO}" type="audio/mpeg">
+                    `;
+                    let prompt_ended_audios = document.querySelector('.end-audio');
+                    audios[index].addEventListener('ended',function(){
+                      
+                        prompt_ended_audios.classList.remove('ds-none');
+                        
+                        setTimeout(function hide(){
+                            prompt_ended_audios.classList.add('ds-none');
+                        },1500);
+                    })
+
+                })
+
+              })
+                let tkrar = document.querySelectorAll('.tkrar');
+                let number_count = document.querySelectorAll('.coutn-azkar');
+                tkrar.forEach((title,index) =>{
+                    title.addEventListener('click',function(){
+                        if(data[title_zkr][index].REPEAT == 0)
+                        {
+                            data[title_zkr][index].REPEAT = 0;
+                            number_count[index].innerText = " عدد التكرارات :" +  data[title_zkr][index].REPEAT;
+
+                        }
+                        else if(data[title_zkr][index].REPEAT != 0)
+                        {
+                            let negative =  data[title_zkr][index].REPEAT;
+                             --negative;
+                             number_count[index].innerText = " عدد التكرارات :" +  negative;
+                        console.log(--data[title_zkr][index].REPEAT);
+                    }
+                    })
+                })
+                tkrar[0].addEventListener('click',function(){
+                    console.log(data[title_zkr][0].REPEAT) ;
+                })
+                //console.log(data[title_zkr][0].ARABIC_TEXT);
+            })
+        }
+       
+        getzekr();
+
+
+
+
+
+
+
+
+      
+
+
+    </script>
+       <script src="../js-app/app.js"></script>
+
+    <script src="https://kit.fontawesome.com/64e995aa72.js" crossorigin="anonymous"></script>
+</body>
+</html>
